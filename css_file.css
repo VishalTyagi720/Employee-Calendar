@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.employee_text_header {
+    /* border: 3px solid black; */
+    border-bottom: 2px solid black;
+    color: #333;
+    text-align: center;
+    height: 20%;
+    font-size: 50px;
+    font-weight:900;
+    margin: 0;
+}
+.main_container {
+    /* border: 2px solid green; */
+    height: 91vh;
+    display: flex;
+}
+.inputs_container {
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.data_input_container {
+    /* border: 2px solid crimson; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data_input_container input {
+    border-radius: 15px;
+    margin: 8% 0;
+    margin-left: -5px;
+    height: 30%;
+    width: 30%;
+    font-size:1.2em;
+}
+.data_input_container label {
+    /* border: 2px solid pink; */
+    height: fit-content;
+    font-size:80%;
+    font-weight: 600;
+    margin: 12% .5%;
+    margin-right: -3px;
+}
+.select_employee_container {
+    /* border: 2px solid blue; */
+    margin: 5% auto;
+}
+.select_employee_container select {
+    /* border: 2px solid pink; */
+    padding: 5px;
+    font-size: x-large;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.select_employee_container select:hover {
+    border: 2px solid black;
+}
+.select_employee_container span {
+    color: blue;
+    text-decoration: underline;
+    margin-left: 2px;
+    cursor: pointer;
+    font-size: smaller;
+}
+.new_employee_container {
+    display: none;
+}
+.new {
+    margin: 6% 0;
+}
+.new_employee_input {
+    height: 15%;
+    width: 60%;
+    margin: 6% 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.new_employee_color {
+    height: 10%;
+}
+.new_employee_add_button {
+    width: 20%;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 900;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 2% 40%;
+}
+.new_employee_add_button:hover {
+    border: 3px solid black;
+}
+.select_working_days {
+    /* border: 2px solid green; */
+    margin: 5% 1%;
+    margin-bottom: 0;
+}
+.get_data_btn {
+    cursor: pointer;
+    height: 8%;
+    width: 90%;
+    margin: 10% auto;
+    border-radius: 15px;
+    font-weight:900;
+    font-size: 25px;
+    color: white;
+    background-color: #4681f4;
+    border: 2px solid #4681f4;
+}
+.calender_info {
+    /* border: 2px solid green; */
+    width: 200px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 0 20%;
+}
+.employee_info {
+    /* border: 2px solid rgb(255, 60, 0); */
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+    /* display: none; */
+    
+}
+.employee_name {
+    /* display: none; */
+    margin: 10px 0;
+    font-size: small;
+    font-weight:800;
+}
+.vertical_line {
+    margin-top: 1%;
+    margin-left: 1%;
+    border-left: 2px solid gray;
+    height: auto;
+}
+.calendar_container {
+    height: max-content;
+    width: 75%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px auto;
+    margin: 0 2%;
+}
+.calendar {
+    width: 300px;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.show {
+    opacity: 1;
+}
+.month {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.day {
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #7b7b7b;
+    background-color: gold;
+    text-align: center;
+}
+.month {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+.employee-A {
+    background-color: greenyellow;
+}
+.employee-B {
+    background-color: red;
+}
+.employee-All {
+    background-color: black;
+    color: white;
+}
+/* .day.weekend {
+    background-color: transparent !important;
+} */

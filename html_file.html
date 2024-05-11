@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Calender</title>
+    <link rel="stylesheet" href="css_file.css">
+</head>
+<body onload="init()">
+    <div class="employee_text_header">EMPLOYEE CALENDAR</div>
+    <main>
+    <div class="main_container">
+        <div class="inputs_container">
+            <div class="data_input_container">
+                <label for="start_date">Start Date:</label>
+                <input type="date" name="" id="start_date">
+                <label for="end_date">End Date:</label>
+                <input type="date" name="" id="end_date">
+            </div>
+            <div class="select_employee_container">
+                <select name="employee" id="select_employee">
+                    <option value="" selected disabled hidden>select</option>
+                    <option value="A">employee A</option>
+                    <option value="B">employee B</option>
+                    <option value="All">All employee</option>
+                </select>
+                &nbsp; <span class="add_employee" onclick="addEmployee()">Add employee +</span>
+                <div class="new_employee_container">
+                    <div>
+                        <label for="new" class="new">Employee Name:</label>
+                        <input id="new" type="text" class="new_employee_input" value="">
+                    </div>
+                    <div>
+                        <label for="new_color" class="new_color">Employee Color:</label>
+                        <input id="new_color" type="text" class="new_employee_color new_employee_input" value="">
+                    </div>
+                    <div class="select_working_days">
+                        <label for='Sun'>Sun</label>
+                        <input id='Sun' type='checkbox' value='0'>
+                        <label for='Mon'>Mon</label>
+                        <input id='Mon' type='checkbox' value='1'>
+                        <label for='Tue'>Tue</label>
+                        <input id='Tue' type='checkbox' value='2'>
+                        <label for='Wed'>Wed</label>
+                        <input id='Wed' type='checkbox' value='3'>
+                        <label for='Thus'>Thus</label>
+                        <input id='Thus' type='checkbox' value='4'>
+                        <label for='Fri'>Fri</label>
+                        <input id='Fri' type='checkbox' value='5'>
+                        <label for='Sat'>Sat</label>
+                        <input id='Sat' type='checkbox' value='6'>
+                    </div>
+                    <button class="new_employee_add_button" onclick="saveEmployee()">Save</button>
+                </div>
+            </div>
+            <button class="get_data_btn" onclick="getdata()">GET DATA</button>
+            <div class="calender_info">
+                <div class="employee_info employee-A"></div>
+                <span class="employee_name">Employee A</span>
+                <div class="employee_info employee-B"></div>
+                <span class="employee_name">Employee B</span>
+                <div class="employee_info employee-All"></div>
+                <span class="employee_name">All Employee</span>
+            </div>
+        </div>
+        <span class="vertical_line"></span>
+        <div class="calendar_container">
+
+        </div>
+    </div>
+    </main>
+
+    <script type="text/javascript" src="js_file.js"></script>
+</body>
+</html>
